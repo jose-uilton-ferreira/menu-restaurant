@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #EFAD00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+h1 {
+  position: relative;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 45%;
+  width: 10%;
+  height: 10px;
+  background-color: var(--primary-color);
+}
+
+.menu {
+  margin: 30px 0;
+}
+
+.menu__categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu__category {
+  width: 100px;
+  padding: 10px 5px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: all .3s;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.menu__category:hover {
+  color: white;
+  background: var(--primary-color);
+}
+
+.menu__wrapper {
+  margin-top: 20px;
+}
+
+.menu__card {
+  width: 25%;
+  padding: 5px;
+  float: left;
+  text-align: center;
+}
+
+.card__header {
+  position: relative;
+}
+
+.card__price {
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  padding: 10px 5px 30px;
+  clip-path: polygon(1% 1%, 0 100%, 50% 67%, 100% 100%, 99% 1%);
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+}
+
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

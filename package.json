@@ -1,0 +1,11 @@
+{
+  "name": "menu-resturant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style=compressed ./src/scss/main.scss:./public/style.css"
+  },
+  "author": "José Uilton",
+  "license": "ISC"
+}
